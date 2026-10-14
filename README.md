@@ -11,8 +11,9 @@ docker compose up --build
 | Service  | URL                    |
 |----------|------------------------|
 | Web app  | http://localhost:8080  |
-| API      | http://localhost:4000/api |
-| MongoDB  | localhost:27017 (single-node replica set `rs0`) |
+| API      | http://localhost:8080/api (through frontend proxy) |
+| MongoDB  | `mongo:27017` (internal Docker network, replica set `rs0`) |
+
 
 Seed data (4 Karnataka heritage sites × 7 days × 8 hourly slots) loads automatically on first start.
 
